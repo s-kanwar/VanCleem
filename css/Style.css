@@ -28,7 +28,9 @@ html, body{
     --Livvic : 'Livvic', cursive;
 }
 
-
+.has-margin-right{
+    margin-right: 10rem;
+}
 /* ---------------- Global Classes ---------------*/
 
 a{
@@ -246,6 +248,29 @@ p{
 	-webkit-transform: translate3d(0, 100%, 0);
 	transform: translate3d(0, 100%, 0);
 }
+
+ .french-vr{
+     position: fixed;
+     bottom: 2vh;
+     right: 2vw;
+    width: 3rem;
+    border: 2px solid;
+    border-radius: 50%;
+    border-color: var(--theme);
+    background-color: transparent;
+    color: var(--theme);
+    height: 3rem;
+    z-index: 3;
+    cursor: pointer;
+    transition: all ease-in 150ms;
+}
+
+.french-vr:hover{
+    color: white;
+    background-color: var(--theme);
+}
+
+
 /* -------x------- button ---------x------- */
 
 
@@ -363,9 +388,9 @@ section .container .owl-nav{
     background: url('../assets/service-background.png');
     background-repeat: no-repeat;
    background-position: right;
-    padding-bottom: 30rem;
+    padding-bottom: 20rem;
     width: 100%;
-    background-size: 65%;
+    background-size: 70%;
 }
 
 .skills {
@@ -407,6 +432,62 @@ section .container .owl-nav{
 
 /* -------x-------- Services --------x-------*/
 
+/* ----------------- Services Details --------------------- */
+
+
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+
+.portfolio-item:last-child {
+    margin-bottom: 0;
+}
+
+.portfolio-img {
+    flex: 1;
+}
+
+.portfolio-description {
+    flex: 1;
+}
+
+.portfolio-item img{
+    margin-top: 8rem;
+    height: 20rem;
+    width: 35rem;
+}
+
+.portfolio-description h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+.portfolio-description h6 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: 0.3;
+}
+
+.portfolio-description .cta {
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #608b9c;
+    transition: color 650ms;
+}
+
+.portfolio-description .cta:hover {
+    color: #2f67cd;
+}
+
+/* ------------X----- Services Details-------X-------------- */
 
 /* ----------------- About Me --------------------- */
 
@@ -433,6 +514,7 @@ section .container .owl-nav{
 .about img{
     height: 20rem;
     width: 20rem;
+    margin-left: 7rem;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.34),
     0 6.7px 5.3px rgba(0, 0, 0, 0.09),
     0 12.5px 10px rgba(95, 39, 95, 0.1),
@@ -443,50 +525,22 @@ section .container .owl-nav{
 
 .profile-img {
     flex: 1;
-    margin-right: 5rem;
+
 }
 
 .about-details {
     flex: 1;
 }
 
-.social-media {
-    margin-top: 5rem;
 
-}
 
-.social-media i {
-    font-size: 4rem;
-    transition: color 650ms;
-    color: #eee;
-}
-.fa-instagram{
-    opacity: .3;
-}
-.fa-linkedin-in{
-    opacity: .3;
-}
-.fa-medium-m{
-    opacity: .3;
-}
-.fa-instagram:hover {
-    opacity: 1;
-    color: #fd57bf;
-}
-
-.fa-linkedin-in:hover {
-    opacity: 1;
-    color: #2f67cd;
-}
-
-.fa-medium-m:hover {
-    opacity: 1;
-    color: #313534;
-}
 
 
 /* ---------x-------About Me -----x----- */
 
+
+  
+  
 /* --------X------- Main -----X--------- */
 
 
@@ -572,7 +626,7 @@ footer.footer .move-up span:hover{
 
 /* ---------x------- Footer ----------x---------- */
 
-/*              Viewport less then or equal to 750px            */
+/*              Viewport less then or equal to 1422px            */
 @media only screen and (max-width: 1422px){
     .my-skills{
         background: none;
@@ -593,6 +647,7 @@ footer.footer .move-up span:hover{
         .about img{
             height:15rem;
             width: 15rem;
+            margin-left:3rem ;
         }
        }
 
@@ -610,6 +665,22 @@ footer.footer .move-up span:hover{
     .site-content .sidebar .popular-post .post-info{
         display: none !important;
     }
+
+    .portfolio-item {
+        flex-direction: column;
+    }
+
+    .portfolio-img {
+        margin: 0 0 2rem 0;
+        order: 1;
+    }
+
+    .portfolio-description {
+        margin: 0;
+        order: 2;
+    }
+
+
 
     footer.footer .container{
         grid-template-columns: repeat(2, 1fr);
@@ -651,6 +722,10 @@ footer.footer .move-up span:hover{
         display: initial;
     }
 
+    .button--rayen{
+        display: none;
+    }
+
     main .site-content{
         flex-direction: column;
         }
@@ -673,8 +748,6 @@ footer.footer .move-up span:hover{
             margin-left: 33;
         }
     
-       
-    
         .about-heading h6 {
             font-size: 1.5rem;
         }
@@ -690,9 +763,13 @@ footer.footer .move-up span:hover{
     footer.footer .container{
         grid-template-columns: repeat(1, 1fr);
     }
-
 }
 
+@media only screen and (min-width: 750px){
+    .french-vr{
+        display: none;
+    }
+}
 
 /*        x      Viewport less then or equal to 750px       x     */
 
