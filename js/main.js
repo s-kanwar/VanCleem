@@ -33,7 +33,11 @@ $(document).ready(function () {
         navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
         responsive: responsive
     });
-
+    $('nav a[href*="#"]').on('click', function () {
+        $('html, body').animate({
+           scrollTop: $($(this).attr('href')).offset().top - 100
+        }, 1000);
+     });
 
     // click to scroll top
     $('.move-up span').click(function () {
@@ -41,6 +45,9 @@ $(document).ready(function () {
             scrollTop: 0
         }, 1000);
     })
+//contact form
+
+
 
     // AOS Instance
     AOS.init();

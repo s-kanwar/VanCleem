@@ -152,12 +152,11 @@ p{
     color: var(--white);
 }
 
-.nav .nav-brand a{
-    font-size: 1.6rem;
+.nav .nav-brand img{
+  
     padding: 1rem 0;
     display: block;
-    font-family: var(--Raleway);
-    font-size: 1.6rem;
+    font-family: var(--Raleway)
 }
 
 .nav .language{
@@ -279,7 +278,7 @@ p{
 
 /* --------------- Site title ---------------- */
 main .site-title{
-    background: url('../assets/vancleem\ banner\ V1.png');
+    background: url('../assets/banner.jpg');
     background-size: cover;
     height: 80vh;
     display: flex;
@@ -316,7 +315,7 @@ main .blog{
     background: url('../assets/Abract01.png');
     background-repeat: no-repeat;
     background-position: right;
-    height: 100vh;
+   height: 100vh;
     width: 100%;
     background-size: 65%;
 }
@@ -434,7 +433,9 @@ section .container .owl-nav{
 /* -------x-------- Services --------x-------*/
 
 /* ----------------- Services Details --------------------- */
-
+.portfolio{
+    margin-bottom: 7rem;
+}
 
 .portfolio-item {
     display: flex;
@@ -464,7 +465,7 @@ section .container .owl-nav{
 
 .portfolio-description h1 {
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 500;
     margin: 1rem 0;
 }
 
@@ -540,13 +541,21 @@ section .container .owl-nav{
 /* ---------x-------About Me -----x----- */
 .contact-me{
      margin-bottom: 10rem;
+     
 }
+
+
+   
 
 .contact-info{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 5rem;
+    background: url('../assets/contact-background.jpg');
+     background-repeat: no-repeat;
+    background-position: left center;
+  
 }
 
 
@@ -554,6 +563,7 @@ section .container .owl-nav{
     flex: 1;
     font-size: 1.5rem;
     font-family: var(--Raleway);
+    
 }
 
 .contact-platforms  span a{
@@ -688,11 +698,11 @@ footer.footer .move-up{
 }
 
 footer.footer .move-up span{
-    color: var(--midnight);
+    color: var(--white);
 }
 
 footer.footer .move-up span:hover{
-    color: var(--white);
+    color: var(--theme);
     cursor: pointer;
 }
 
@@ -754,6 +764,7 @@ footer.footer .move-up span:hover{
   .contact-info{
     flex-direction: column;
     text-align: center;
+    background: none;
   }
 
 
@@ -769,26 +780,8 @@ footer.footer .move-up span:hover{
 
 /*             Viewport less then or equal to 920px         */
 
-@media only screen and (max-width: 1250px){
-    .about-heading h1 {
-        font-size: 3rem;
-    }
 
-    .profile-img {
-        margin: 0 0 2rem 0;
-    }
-
-    .about img{
-        height:15rem;
-        width: 15rem;
-    }
-   }
-
-/*      x       Viewport less then or equal to 920px    x     */
-
-/*              Viewport less then or equal to 750px            */
-
-@media only screen and (max-width: 750px){
+   @media only screen and (max-width: 920px){
     .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
     }
@@ -800,6 +793,23 @@ footer.footer .move-up span:hover{
     .button--rayen{
         display: none;
     }
+    
+   }
+
+   @media only screen and (min-width: 920px){
+    .french-vr{
+        display: none;
+    }
+}
+
+/*      x       Viewport less then or equal to 920px    x     */
+
+/*              Viewport less then or equal to 750px            */
+
+@media only screen and (max-width: 750px){
+   
+
+    
 
     main .site-content{
         flex-direction: column;
@@ -834,13 +844,14 @@ footer.footer .move-up span:hover{
         .about img{
             height:15rem;
             width: 15rem;
+            margin-right: 2rem;
         }
     footer.footer .container{
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-@media only screen and (min-width: 750px){
+@media only screen and (min-width: 920px){
     .french-vr{
         display: none;
     }
@@ -853,7 +864,7 @@ footer.footer .move-up span:hover{
 
 @media only screen and (max-width: 520px){
     main .blog{
-        height: 125vh;
+        height: 100vh;
     }
 
     .site-content .post-content > .post-image .post-info{
@@ -896,3 +907,121 @@ footer.footer .move-up span:hover{
 }
 
 /*        x      Viewport less then or equal to 520px       x     */
+
+
+/*              Viewport less then or equal to 420px  and greater than 400px           */
+
+@media only screen and (max-width: 420px) and (min-width:400px){
+   
+    .skills{
+        margin-right:calc(100vw - 90vw);
+       
+    }
+}
+
+
+
+/*        x      Viewport less then or equal to 420px and greater than 400px       x     */
+
+
+
+
+/*              Viewport less then or equal to 400px            */
+
+
+
+@media only screen and (max-width: 400px){
+    .site-background h1{
+        font-size: 1.7rem;
+        color: rgb(255, 255, 255);
+    }
+    
+    .site-background h3{
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+    }
+    
+    }
+
+
+/*        x      Viewport less then or equal to 400px       x     */
+
+
+
+@media only screen and (max-width: 400px) and (min-width:380px){
+   
+    .skills{
+        margin-right:calc(100vw - 87vw);
+       
+    }
+}
+
+
+
+@media only screen and (max-width: 380px) and (min-width:360px){
+   
+    .skills{
+        margin-right:calc(100vw - 85vw);
+       
+    }
+}
+
+
+@media only screen and (max-width: 360px){
+   
+    .skills{
+        margin-right:calc(100vw - 77vw);
+       
+    }
+}
+
+
+
+
+
+@media only screen and (min-width:1800px){
+    body{
+        margin: 0 calc(100vw - 95vw);
+    }
+
+    h1{
+        font-size: 2.6rem;
+    }
+
+    h3{
+        font-size: 1.7rem;
+    }
+
+    p{
+        font-size: 1.4rem;
+    }
+
+    .nav-link a{
+        font-size: 2.2rem;
+        padding: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 1130px){
+    .contact-me .section-heading{
+        margin-bottom: 7rem;
+    }
+    .contact-platforms{
+        margin-left: calc(100vw - 90vw);
+    }
+
+    .contact-form-area{
+        margin-right: calc(100vw - 90vw);
+    }
+}
+
+
+@media only screen and (min-width: 1600px){
+    .contact-platforms{
+        margin-left: calc(100vw - 85vw);
+    }
+
+    .contact-form-area{
+        margin-right: calc(100vw - 85vw);
+    }
+}
