@@ -1007,21 +1007,21 @@ footer.footer .move-up span:hover{
         margin-bottom: 7rem;
     }
     .contact-platforms{
-        margin-left: calc(100vw - 90vw);
+        margin-left: calc(100vw - 80vw);
     }
 
     .contact-form-area{
-        margin-right: calc(100vw - 90vw);
+        margin-right: calc(100vw - 80vw);
     }
 }
 
 
 @media only screen and (min-width: 1600px){
     .contact-platforms{
-        margin-left: calc(100vw - 85vw);
+        margin-left: calc(100vw - 75vw);
     }
 
     .contact-form-area{
-        margin-right: calc(100vw - 85vw);
+        margin-right: calc(100vw - 75vw);
     }
 }
