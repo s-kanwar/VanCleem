@@ -1,5 +1,6 @@
 
 @import url('../css/fonts.css');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;700&display=swap');
 
 
 html, body{
@@ -21,10 +22,10 @@ html, body{
     --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 
     /*      theme font-family   */
-    --Abel: 'Abel', cursive;
+    --Abel: 'Abel', sans-serif
     --Anton: 'Anton', cursive;
     --Josefin : 'Josefin', cursive;
-    --Lexend: 'Lexend', cursive;
+    --Raleway: 'Raleway', sans-serif;
     --Livvic : 'Livvic', cursive;
 }
 
@@ -49,12 +50,12 @@ ul{
 }
 
 h1{
-    font-family: var(--Lexend);
+    font-family: var(--Raleway);
     font-size: 2.5rem;
 }
 
 h2{
-    font-family: var(--Lexend);
+    font-family: var(--Raleway);
 }
 
 h3{
@@ -72,7 +73,7 @@ button.btn{
 }
 
 span{
-    font-family: var(--Abel);
+    font-family: var(--Raleway);
 }
 
 .container{
@@ -84,7 +85,7 @@ span{
 }
 
 p{
-    font-family: var(--Lexend);
+    font-family: var(--Raleway);
     color: var(--text-light);
 }
 
@@ -155,7 +156,7 @@ p{
     font-size: 1.6rem;
     padding: 1rem 0;
     display: block;
-    font-family: var(--Lexend);
+    font-family: var(--Raleway);
     font-size: 1.6rem;
 }
 
@@ -409,7 +410,7 @@ section .container .owl-nav{
     letter-spacing: 2px;
     margin: 2rem -2px 2rem 0;
     font-size: 1.2rem;
-    font-family: var(--Lexend);
+    font-family: var(--Raleway);
 
 }
 
@@ -507,7 +508,7 @@ section .container .owl-nav{
 
 .about-heading h1 {
     font-size: 4rem;
-    font-family:var(--Lexend);
+    font-family:var(--Raleway);
 }
 
 
@@ -537,8 +538,79 @@ section .container .owl-nav{
 
 
 /* ---------x-------About Me -----x----- */
+.contact-me{
+     margin-bottom: 10rem;
+}
+
+.contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
 
 
+.contact-platforms{
+    flex: 1;
+    font-size: 1.5rem;
+    font-family: var(--Raleway);
+}
+
+.contact-platforms  span a{
+    color: var(--theme);
+}
+.form{
+    flex: 1;
+    width:340px;
+    height:440px;
+    background:var(--white);
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    font-family:var(--Abel);
+  }
+  .form-heading{
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:var(--theme);
+    border-bottom:3px solid var(--theme);
+  }
+  input{
+    width:100%;
+    padding:10px;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    transition:all .3s;
+    border-bottom:2px solid var(--theme);
+  }
+  input:focus{
+    border-bottom:2px solid #78788c;
+  }
+  .form-fill:before{
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size:14px;
+    color:#5a5a5a;
+  }
+  .contact-button{float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid var(--theme);
+    background:0;
+    color:var(--theme);
+    cursor:pointer;
+    transition:all .3s;
+  }
+  .contact-button:hover{
+    background:var(--theme);
+    color:var(--theme);
+  }
   
   
 /* --------X------- Main -----X--------- */
@@ -577,7 +649,7 @@ footer.footer .newsletter .form-element input{
     border: none;
     background: transparent;
     color: white;
-    font-family: var(--Josefin);
+    font-family: var(--Raleway);
     font-size: 1rem;
     width: 74%;
 }
@@ -602,7 +674,7 @@ footer.footer .follow div i{
 
 footer.footer .rights{
     justify-content: center;
-    font-family: var(--Josefin);
+    font-family: var(--Raleway);
 }
 
 footer.footer .rights h4 a{
@@ -679,7 +751,10 @@ footer.footer .move-up span:hover{
         margin: 0;
         order: 2;
     }
-
+  .contact-info{
+    flex-direction: column;
+    text-align: center;
+  }
 
 
     footer.footer .container{
