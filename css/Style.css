@@ -619,7 +619,7 @@ section .container .owl-nav{
   }
   .contact-button:hover{
     background:var(--theme);
-    color:var(--theme);
+    color:var(--white);
   }
   
   
